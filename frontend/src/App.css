@@ -1,0 +1,202 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #1e293b;
+}
+
+button, input {
+  font: inherit;
+}
+
+.navbar {
+  background: #172554;
+  color: white;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.navbar span {
+  color: #cbd5e1;
+}
+
+.container {
+  max-width: 850px;
+  margin: 55px auto;
+  padding: 0 20px;
+}
+
+.tagline {
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #64748b;
+}
+
+.task-form {
+  display: flex;
+  gap: 12px;
+  margin: 30px 0;
+}
+
+.task-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 12px 18px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.stat, .task-list {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #0f172a0a;
+}
+
+.stat h2 {
+  color: #2563eb;
+  margin: 0;
+}
+
+.stat p, .empty {
+  color: #64748b;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.task label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow-wrap: anywhere;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #94a3b8;
+}
+
+.delete {
+  background: #dc2626;
+  padding: 8px 12px;
+}
+
+footer {
+  text-align: center;
+  color: #64748b;
+  padding: 25px;
+}
+
+@media (max-width: 550px) {
+  .navbar {
+    padding: 18px;
+  }
+
+  .navbar span {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .task-form {
+    flex-direction: column;
+  }
+
+  .stats {
+    gap: 8px;
+  }
+
+  .stat {
+    padding: 14px 8px;
+  }
+
+  .stat p {
+    font-size: 12px;
+  }
+}
+
+.container h1,
+.task-list h2 {
+  color: #172554;
+}
+
+.task-form input {
+  background: #ffffff;
+  color: #1e293b;
+}
+
+.task-form input::placeholder {
+  color: #64748b;
+}
+
+.task-form {
+  flex-wrap: wrap;
+}
+
+.task-form input {
+  flex: 1 1 180px;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.description {
+  display: block;
+  margin-top: 5px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+@media (max-width: 550px) {
+  .task-actions {
+    flex-wrap: wrap;
+  }
+}
